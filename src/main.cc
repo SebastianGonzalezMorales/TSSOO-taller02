@@ -131,7 +131,12 @@ int main(int argc, char** argv){
 	std::cout << "====Comprobación de sumas====" << std::endl;
 	std::cout << "Suma Total serial: " << sumaSecuencial << std::endl;
         std::cout << "Suma Total en Paralelo: " << sumaParalelo << std::endl;
-	std::cout << "\n";
+	
+        std::cout << "====Tiempos totales==== " << std::endl;
+        std::cout << "Tiempo total secuencial: " << totalTimeFill_secuencial + totalTime_SumaSecuencial  << std::endl;
+        std::cout << "Tiempo Total paralelo: " << totalTimeFill_threads + totalTime_SumaParalelo  << "\n" <<std::endl;
+
+
 
 	return(EXIT_SUCCESS);
 
